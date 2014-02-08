@@ -30,6 +30,7 @@ Partial Class frmLogIn
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,7 +38,7 @@ Partial Class frmLogIn
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(286, 325)
+        Me.Button1.Location = New System.Drawing.Point(211, 322)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(134, 41)
         Me.Button1.TabIndex = 1
@@ -86,11 +87,11 @@ Partial Class frmLogIn
         Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(426, 325)
+        Me.Button2.Location = New System.Drawing.Point(351, 322)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(134, 41)
         Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Cancel"
+        Me.Button2.Text = "Clear"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -103,6 +104,18 @@ Partial Class frmLogIn
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Button3
+        '
+        Me.Button3.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(491, 322)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(134, 41)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Close"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'frmLogIn
         '
         Me.AcceptButton = Me.Button1
@@ -110,6 +123,7 @@ Partial Class frmLogIn
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Button2
         Me.ClientSize = New System.Drawing.Size(837, 432)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
@@ -135,5 +149,6 @@ Partial Class frmLogIn
     Friend WithEvents txtUsername As System.Windows.Forms.TextBox
     Friend WithEvents txtPassword As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class

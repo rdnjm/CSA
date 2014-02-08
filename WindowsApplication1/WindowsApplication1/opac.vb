@@ -7,7 +7,8 @@
     End Sub
 
     Private Sub frmOpac_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'TestDataSet.Lib_System' table. You can move, or remove it, as needed.
+        'TODO: This line of code loads data into the 'TryTestDataSet.Lib_System' table. You can move, or remove it, as needed.
+        Me.Lib_SystemTableAdapter1.Fill(Me.TryTestDataSet.Lib_System)
         Me.Lib_SystemTableAdapter.Fill(Me.TestDataSet.Lib_System)
 
     End Sub

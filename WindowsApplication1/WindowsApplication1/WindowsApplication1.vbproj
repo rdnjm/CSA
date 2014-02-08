@@ -88,11 +88,53 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addBook.Designer.vb">
+      <DependentUpon>addBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookList.Designer.vb">
+      <DependentUpon>BookList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow.Designer.vb">
+      <DependentUpon>Borrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowerTab.Designer.vb">
+      <DependentUpon>BorrowerTab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowerTab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checkout.Designer.vb">
+      <DependentUpon>Checkout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editBook.Designer.vb">
+      <DependentUpon>editBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="logIn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="logIn.Designer.vb">
       <DependentUpon>logIn.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logout.Designer.vb">
+      <DependentUpon>Logout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mainWindow.Designer.vb">
@@ -116,10 +158,40 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="newUser.Designer.vb">
+      <DependentUpon>newUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="opac.Designer.vb">
       <DependentUpon>opac.vb</DependentUpon>
     </Compile>
     <Compile Include="opac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnConfirm.Designer.vb">
+      <DependentUpon>returnConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="returnConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnModule.Designer.vb">
+      <DependentUpon>ReturnModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnModule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Faculty Account.Designer.vb">
+      <DependentUpon>Student Faculty Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Faculty Account.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TestDataSet.Designer.vb">
@@ -127,10 +199,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TestDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tryTestDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tryTestDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="addBook.resx">
+      <DependentUpon>addBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookList.resx">
+      <DependentUpon>BookList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow.resx">
+      <DependentUpon>Borrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowerTab.resx">
+      <DependentUpon>BorrowerTab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checkout.resx">
+      <DependentUpon>Checkout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editBook.resx">
+      <DependentUpon>editBook.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="logIn.resx">
       <DependentUpon>logIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logout.resx">
+      <DependentUpon>Logout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainWindow.resx">
       <DependentUpon>mainWindow.vb</DependentUpon>
@@ -141,8 +239,23 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="newUser.resx">
+      <DependentUpon>newUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="opac.resx">
       <DependentUpon>opac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnConfirm.resx">
+      <DependentUpon>returnConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnModule.resx">
+      <DependentUpon>ReturnModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Faculty Account.resx">
+      <DependentUpon>Student Faculty Account.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +279,17 @@
     </None>
     <None Include="TestDataSet.xss">
       <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tryTestDataSet.xsc">
+      <DependentUpon>tryTestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tryTestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tryTestDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tryTestDataSet.xss">
+      <DependentUpon>tryTestDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +347,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\new user.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\clear1.png" />
+    <None Include="Resources\chekcout.png" />
+    <None Include="Resources\confirm.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\Excel-icon.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\logout.png" />
     <Content Include="tryTest.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
